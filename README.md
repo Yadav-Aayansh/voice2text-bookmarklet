@@ -25,17 +25,3 @@ A simple, modern tool to **record your voice and transcribe it to text** using *
 - Click the bookmarklet on any site to start recording and transcribing
 
 ---
-
-## Setup (for developers)
-
-1. Clone the repo:
-```bash
-git clone https://github.com/Yadav-Aayansh/voice2text-bookmarklet.git
-```
-
-2. Open `index.html` in a browser or host via GitHub Pages  
-3. Update `gemini.js` if needed  
-4. Ensure your Gemini API key is stored in `localStorage` on first use
-
----
-
