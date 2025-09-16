@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gemini Voice-to-Text Bookmarklet</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 flex items-center justify-center min-h-screen p-6 font-sans">
+  <div class="max-w-xl w-full bg-white shadow-xl rounded-2xl p-8 text-center">
+    <h1 class="text-2xl font-bold mb-4">🎤 Gemini Audio Transcriber</h1>
+    <p class="text-gray-600 mb-6">
+      Click the button to start/stop recording and transcribe your speech.<br>
+      Or drag the button below to your bookmarks bar to use anywhere.
+    </p>
+
+    <!-- On-page button -->
+    <button
+      id="startBtn"
+      class="bg-indigo-600 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:bg-indigo-700 transition-all"
+    >
+      🎤 Start/Stop Recording
+    </button>
+
+    <!-- Drag-to-bookmark link -->
+    <p class="mt-6 text-sm text-gray-500">
+      Drag this to your bookmarks bar: 
+      <a
+        href="javascript:(function(){var s=document.createElement('script');s.src='https://Yadav-Aayansh.github.io/voice2text-bookmarklet/gemini.js';document.body.appendChild(s);})();"
+        class="text-indigo-600 underline"
+      >
+        Gemini Recorder
+      </a>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById("startBtn").addEventListener("click", () => {
+      const s = document.createElement("script");
+      s.src = "gemini.js";
+      document.body.appendChild(s);
+    });
+  </script>
+</body>
+</html>
